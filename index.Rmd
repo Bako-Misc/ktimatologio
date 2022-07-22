@@ -9,6 +9,7 @@ library(dplyr)
 library(sf)
 library(ggplot2)
 library(tmap)
+library(leaflet)
 ```
 
 
@@ -16,15 +17,39 @@ library(tmap)
 dexameni <- read_sf("../dexameni_poly.shp")
 farmakeio <- read_sf("../farmakeio.shp")
 mandra <- read_sf("../mandra.shp")
+
 ```
 
 ## Dexameni
+
+**Total Area:** 1727 km2
 ```{r dexameni, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_shape(dexameni) + tm_polygons()  + tm_format("World", title="Περιοχή Δεξαμενή")+
-                                                  tm_style("white")
+tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_polygons()
+```
+
+## Mandra
+
+**Total Area:** 477 km2
+```{r Mandra, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_polygons()
+```
+
+## Farmakeio
+
+**Total Area:** 101 km2
+```{r Farmakeio, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_polygons()
 ```
 
