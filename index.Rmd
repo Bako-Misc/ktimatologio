@@ -17,6 +17,9 @@ library(leaflet)
 dexameni <- read_sf("../dexameni_poly.shp")
 farmakeio <- read_sf("../farmakeio.shp")
 mandra <- read_sf("../mandra.shp")
+tzitzi <- read_sf("../tzitzi.shp")
+ag_apostoloi <- read_sf("../ag_apostoloi.shp")
+koumpouloi <- read_sf("../koumpouloi.shp")
 
 ```
 
@@ -53,3 +56,35 @@ tmap_mode("view")
 tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_polygons()
 ```
 
+## Koumpouloi
+
+**Total Area:** 792 km2
+```{r koumpouloi, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(koumpouloi) + tm_polygons()
+```
+
+## Agioi Apostoloi
+
+**Total Area:** 792 km2
+```{r agioi, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(ag_apostoloi) + tm_polygons()
+```
+
+## Tzitzi
+
+**Total Area:** 1700 km2
+```{r tzti, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(tzitzi) + tm_polygons()
+```
