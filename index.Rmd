@@ -25,7 +25,7 @@ koumpouloi <- read_sf("../koumpouloi.shp")
 
 ## Dexameni
 
-**Total Area:** 1727 km2
+**Total Area:** 1727 m2
 ```{r dexameni, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
@@ -36,7 +36,7 @@ tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_polygons()
 
 ## Mandra
 
-**Total Area:** 477 km2
+**Total Area:** 477 m2
 ```{r Mandra, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
@@ -47,7 +47,7 @@ tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_polygons()
 
 ## Farmakeio
 
-**Total Area:** 101 km2
+**Total Area:** 101 m2
 ```{r Farmakeio, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
@@ -58,7 +58,7 @@ tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_polygons()
 
 ## Koumpouloi
 
-**Total Area:** 792 km2
+**Total Area:** 792 m2
 ```{r koumpouloi, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
@@ -69,7 +69,7 @@ tm_basemap("OpenStreetMap") + tm_shape(koumpouloi) + tm_polygons()
 
 ## Agioi Apostoloi
 
-**Total Area:** 792 km2
+**Total Area:** 792 m2
 ```{r agioi, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
@@ -80,7 +80,7 @@ tm_basemap("OpenStreetMap") + tm_shape(ag_apostoloi) + tm_polygons()
 
 ## Tzitzi
 
-**Total Area:** 1700 km2
+**Total Area:** 1700 m2
 ```{r tzti, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
