@@ -45,6 +45,7 @@ koumpouloi <- read_sf("../koumpouloi.shp")
 **KAEK:** 480090202005
 ```{r dexameni, echo=FALSE, message=FALSE, warning=FALSE}
 dexamenoi_pts <- dexamenoi_pts[, c(4, 1, 2, 3)]
+dexamenoi_pts <- dexamenoi_pts[1:3]
 dexamenoi_pts %>% st_drop_geometry() %>% kbl %>%
   kable_paper("hover", full_width = F)
 
