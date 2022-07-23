@@ -1,10 +1,15 @@
 ---
 title: "Ktimatologio Aggelw"
-output: html_document
-date: '2022-07-22'
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+
 ---
 
-```{r libraries, message=FALSE, warning=FALSE}
+```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr)
 library(sf)
 library(ggplot2)
@@ -31,7 +36,7 @@ koumpouloi <- read_sf("../koumpouloi.shp")
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_polygons()
+tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_fill("#31a354") + tm_polygons()
 ```
 
 ## Mandra
@@ -42,7 +47,7 @@ tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_polygons()
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_fill("#31a354") + tm_polygons()
 ```
 
 ## Farmakeio
@@ -53,7 +58,7 @@ tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_polygons()
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_fill("#756bb1") + tm_polygons()
 ```
 
 ## Koumpouloi
@@ -64,18 +69,18 @@ tm_basemap("OpenStreetMap") + tm_shape(farmakeio) + tm_polygons()
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(koumpouloi) + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(koumpouloi) + tm_fill("#31a354") + tm_polygons()
 ```
 
 ## Agioi Apostoloi
 
-**Total Area:** 792 m2
+**Total Area:** 1987 m2
 ```{r agioi, echo=FALSE, message=FALSE, warning=FALSE}
 
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(ag_apostoloi) + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(ag_apostoloi) + tm_fill("#31a354") + tm_polygons()
 ```
 
 ## Tzitzi
@@ -86,5 +91,5 @@ tm_basemap("OpenStreetMap") + tm_shape(ag_apostoloi) + tm_polygons()
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(tzitzi) + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(tzitzi) + tm_fill("#31a354") + tm_polygons()
 ```
