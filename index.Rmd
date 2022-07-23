@@ -34,7 +34,7 @@ tzitzi <- read_sf("../tzitzi.shp")
 ag_apostoloi <- read_sf("../ag_apostoloi.shp")
 koumpouloi <- read_sf("../koumpouloi.shp")
 aggelospilia <- read_sf("../aggelospilia.shp")
-
+armyres <- read_sf("../armyres.shp")
 ```
 
 
@@ -121,4 +121,16 @@ tmap_options(check.and.fix = T)
 tmap_mode("view")
 
 tm_basemap("OpenStreetMap") + tm_shape(aggelospilia) + tm_fill("#31a354") + tm_polygons()
+```
+
+
+## Armyres (25% -- + Tasoula + Koladouros)
+
+**Total Area:** 658 m2
+```{r armyres, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(armyres) + tm_fill("#fa9fb5") + tm_polygons()
 ```
