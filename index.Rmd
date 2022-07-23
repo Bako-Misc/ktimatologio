@@ -2,10 +2,9 @@
 title: "Ktimatologio Aggelw"
 output:
   html_document:
+    theme: united
+    highlight: tango
     toc: true
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
 
 ---
 
