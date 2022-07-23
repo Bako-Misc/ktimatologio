@@ -8,17 +8,26 @@ output:
 
 ---
 
+
 ```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr)
 library(sf)
 library(ggplot2)
 library(tmap)
 library(leaflet)
+library(readr)
+library(kableExtra)
 ```
 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
+
+## read csvs
+dex_csv <- read_csv("../dexameni.csv")
+
+## read shapefiles
 dexameni <- read_sf("../dexameni_poly.shp")
+dexamenoi_pts <- read_sf("../dexam_points.shp")
 farmakeio <- read_sf("../farmakeio.shp")
 mandra <- read_sf("../mandra.shp")
 tzitzi <- read_sf("../tzitzi.shp")
@@ -27,18 +36,26 @@ koumpouloi <- read_sf("../koumpouloi.shp")
 
 ```
 
+
+
+
 ## Dexameni
 
-**Total Area:** 1727 m2
+**Total Area:** 1727 m2  
+**KAEK:** 480090202005
 ```{r dexameni, echo=FALSE, message=FALSE, warning=FALSE}
+dexamenoi_pts <- dexamenoi_pts[, c(4, 1, 2, 3)]
+dexamenoi_pts %>% st_drop_geometry() %>% kbl %>%
+  kable_paper("hover", full_width = F)
 
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_fill("#31a354") + tm_polygons()
+tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_fill("#31a354") +
+  tm_polygons() + tm_shape(dexamenoi_pts) + tm_dots()
 ```
 
-## Mandra
+## Mandra (aka spiti amfissa)
 
 **Total Area:** 477 m2
 ```{r Mandra, echo=FALSE, message=FALSE, warning=FALSE}
@@ -46,7 +63,7 @@ tm_basemap("OpenStreetMap")  + tm_shape(dexameni) + tm_fill("#31a354") + tm_poly
 tmap_options(check.and.fix = T)
 tmap_mode("view")
 
-tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_fill("#31a354") + tm_polygons()
+tm_basemap("OpenStreetMap") + tm_shape(mandra) + tm_fill("#756bb1") + tm_polygons()
 ```
 
 ## Farmakeio

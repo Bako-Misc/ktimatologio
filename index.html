@@ -213,6 +213,230 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 <script>(function() {
   // If window.HTMLWidgets is already defined, then use it; otherwise create a
   // new object. This allows preceding code to set options that affect the
@@ -5246,7 +5470,8 @@ pre code {
 <div id="TOC">
 <ul>
 <li><a href="#dexameni">Dexameni</a></li>
-<li><a href="#mandra">Mandra</a></li>
+<li><a href="#mandra-aka-spiti-amfissa">Mandra (aka spiti
+amfissa)</a></li>
 <li><a href="#farmakeio">Farmakeio</a></li>
 <li><a href="#koumpouloi">Koumpouloi</a></li>
 <li><a href="#agioi-apostoloi">Agioi Apostoloi</a></li>
@@ -5256,39 +5481,214 @@ pre code {
 
 <div id="dexameni" class="section level2">
 <h2>Dexameni</h2>
-<p><strong>Total Area:</strong> 1727 m2</p>
-<div id="htmlwidget-83e853f40a7f4134cdd9" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-83e853f40a7f4134cdd9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3699535,22.3700237,22.3702462,22.3705008,22.3705718,22.3704575,22.3704034,22.3703083,22.3701884,22.3699535],"lat":[38.5280326,38.5277027,38.5278033,38.5280129,38.5281072,38.5281483,38.5281079,38.5281666,38.5282628,38.5280326]}]]],"X2","dexameni",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>area<\/nobr><\/td><td align=\"right\"><nobr>1,727<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Dexameni<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dexameni",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5277027,38.5282628],"lng":[22.3699535,22.3705718]},"fitBounds":[38.5277027257972,22.3699535141488,38.5282628130157,22.3705717502643,[]]},"evals":[],"jsHooks":[]}</script>
+<strong>Total Area:</strong> 1727 m2<br />
+<strong>KAEK:</strong> 480090202005
+<table class=" lightable-paper lightable-hover" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+id
+</th>
+<th style="text-align:right;">
+X
+</th>
+<th style="text-align:right;">
+Y
+</th>
+<th style="text-align:right;">
+ΚΑΕΚ
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+357763.8
+</td>
+<td style="text-align:right;">
+4265375
+</td>
+<td style="text-align:right;">
+480090202005
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+357784.8
+</td>
+<td style="text-align:right;">
+4265401
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+357795.0
+</td>
+<td style="text-align:right;">
+4265390
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+357803.2
+</td>
+<td style="text-align:right;">
+4265383
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+357808.0
+</td>
+<td style="text-align:right;">
+4265388
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+357817.9
+</td>
+<td style="text-align:right;">
+4265383
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+357811.5
+</td>
+<td style="text-align:right;">
+4265372
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+357788.9
+</td>
+<td style="text-align:right;">
+4265350
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+357769.3
+</td>
+<td style="text-align:right;">
+4265339
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+357763.8
+</td>
+<td style="text-align:right;">
+4265375
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+357763.8
+</td>
+<td style="text-align:right;">
+4265375
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
+<div id="htmlwidget-b31d0b7c3a6ecc3688e6" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b31d0b7c3a6ecc3688e6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3699535,22.3700237,22.3702462,22.3705008,22.3705718,22.3704575,22.3704034,22.3703083,22.3701884,22.3699535],"lat":[38.5280326,38.5277027,38.5278033,38.5280129,38.5281072,38.5281483,38.5281079,38.5281666,38.5282628,38.5280326]}]]],"X2","dexameni",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>12<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>area<\/nobr><\/td><td align=\"right\"><nobr>1,727<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Dexameni<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[38.5280325501209,38.5282628130157,38.528166619941,38.5281079299196,38.5281483132489,38.5281072087225,38.5280128650982,38.5278033241497,38.5277027257972,38.5280325501209,38.5280325501209],[22.3699535141488,22.370188417718,22.3703082858155,22.3704034468451,22.3704574729908,22.3705717502643,22.3705008048014,22.3702461614603,22.3700237052287,22.3699535141488,22.3699535141488],[2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619,2.82842712474619],["X1","X2.1","X3","X4","X5","X6","X7","X8","X9","X10","X11"],"dexamenoi_pts",{"interactive":true,"className":"","pane":"tmap402","stroke":true,"color":"#666666","weight":1,"opacity":0.5,"fill":true,"fillColor":["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],"fillOpacity":[1,1,1,1,1,1,1,1,1,1,1]},null,null,["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>1<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>1<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,764<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,375<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>480 bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,785<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,401<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>3<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>3<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,795<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,390<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>4<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>4<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,803<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,383<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>5<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>5<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,808<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,388<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>6<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>6<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,818<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,383<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>7<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>7<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,812<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,372<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>8<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>8<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,789<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,350<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>9<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>9<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,769<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,339<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>10<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>10<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,764<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,375<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>11<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>id<\/nobr><\/td><td align=\"right\"><nobr>11<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>X<\/nobr><\/td><td align=\"right\"><nobr>357,764<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Y<\/nobr><\/td><td align=\"right\"><nobr>4,265,375<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>ΚΑΕΚ<\/nobr><\/td><td align=\"right\"><nobr>NA bln<\/nobr><\/td><\/tr><\/table><\/div>"],null,["1","2","3","4","5","6","7","8","9","10","11"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dexameni","dexamenoi_pts"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5277027,38.5282628130157],"lng":[22.3699535,22.3705718]},"fitBounds":[38.5277027257972,22.3699535141488,38.5282628130157,22.3705717502643,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="mandra" class="section level2">
-<h2>Mandra</h2>
+<div id="mandra-aka-spiti-amfissa" class="section level2">
+<h2>Mandra (aka spiti amfissa)</h2>
 <p><strong>Total Area:</strong> 477 m2</p>
-<div id="htmlwidget-4bd64b86be64a5c79945" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4bd64b86be64a5c79945">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3810429,22.3810568,22.3810939,22.3811835,22.3812049,22.3813227,22.3813132,22.381282,22.3813639,22.3813497,22.3813357,22.3813111,22.3812581,22.3812483,22.3811595,22.3811539,22.3810429],"lat":[38.529876,38.529844,38.5297593,38.5297744,38.529778,38.5297975,38.5298312,38.5299418,38.5299624,38.530001,38.5300386,38.5300325,38.5300193,38.5300169,38.5299949,38.5299076,38.529876]}]]],"X2","mandra",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>19<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Mandra<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>477.1<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"mandra",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5297593,38.5300386],"lng":[22.3810429,22.3813639]},"fitBounds":[38.5297592669941,22.3810428580349,38.530038589187,22.3813638527778,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-19f4c1f12e30b366db29" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-19f4c1f12e30b366db29">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3810429,22.3810568,22.3810939,22.3811835,22.3812049,22.3813227,22.3813132,22.381282,22.3813639,22.3813497,22.3813357,22.3813111,22.3812581,22.3812483,22.3811595,22.3811539,22.3810429],"lat":[38.529876,38.529844,38.5297593,38.5297744,38.529778,38.5297975,38.5298312,38.5299418,38.5299624,38.530001,38.5300386,38.5300325,38.5300193,38.5300169,38.5299949,38.5299076,38.529876]}]]],"X2","mandra",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#756BB1","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>19<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Mandra<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>477.1<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"mandra",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5297593,38.5300386],"lng":[22.3810429,22.3813639]},"fitBounds":[38.5297592669941,22.3810428580349,38.530038589187,22.3813638527778,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="farmakeio" class="section level2">
 <h2>Farmakeio</h2>
 <p><strong>Total Area:</strong> 101 m2</p>
-<div id="htmlwidget-40aea6bc8ce35211f890" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-40aea6bc8ce35211f890">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.376799,22.3767879,22.376796,22.3769394,22.3769147,22.376799],"lat":[38.5277234,38.5277211,38.527648,38.5276522,38.5277308,38.5277234]}]]],"X2","farmakeio",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#756BB1","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>8<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Farmakeio<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>101<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"farmakeio",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.527648,38.5277308],"lng":[22.3767879,22.3769394]},"fitBounds":[38.5276480179518,22.3767879299036,38.527730836479,22.3769393525798,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a23f1bde0afefbad6aba" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a23f1bde0afefbad6aba">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.376799,22.3767879,22.376796,22.3769394,22.3769147,22.376799],"lat":[38.5277234,38.5277211,38.527648,38.5276522,38.5277308,38.5277234]}]]],"X2","farmakeio",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#756BB1","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>8<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Farmakeio<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>101<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"farmakeio",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.527648,38.5277308],"lng":[22.3767879,22.3769394]},"fitBounds":[38.5276480179518,22.3767879299036,38.527730836479,22.3769393525798,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="koumpouloi" class="section level2">
 <h2>Koumpouloi</h2>
 <p><strong>Total Area:</strong> 792 m2</p>
-<div id="htmlwidget-8629d8340e567d56c5dc" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8629d8340e567d56c5dc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.4017765,22.4017116,22.4016677,22.4016607,22.4013915,22.4013837,22.4013414,22.4013437,22.4012355,22.4012134,22.4014541,22.40148,22.401768,22.4017765],"lat":[38.5252202,38.5251611,38.525144,38.5249771,38.525036,38.5250329,38.5250164,38.5249664,38.5249344,38.524931,38.5247899,38.5248104,38.5249934,38.5252202]}]]],"X2","koumpouloi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>16<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>792.2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Koumpouloi<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"koumpouloi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5247899,38.5252202],"lng":[22.4012134,22.4017765]},"fitBounds":[38.5247898717752,22.4012133874574,38.5252202350114,22.4017764820153,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ac1e796216ada854ef87" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ac1e796216ada854ef87">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.4017765,22.4017116,22.4016677,22.4016607,22.4013915,22.4013837,22.4013414,22.4013437,22.4012355,22.4012134,22.4014541,22.40148,22.401768,22.4017765],"lat":[38.5252202,38.5251611,38.525144,38.5249771,38.525036,38.5250329,38.5250164,38.5249664,38.5249344,38.524931,38.5247899,38.5248104,38.5249934,38.5252202]}]]],"X2","koumpouloi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>16<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>792.2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Koumpouloi<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"koumpouloi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5247899,38.5252202],"lng":[22.4012134,22.4017765]},"fitBounds":[38.5247898717752,22.4012133874574,38.5252202350114,22.4017764820153,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="agioi-apostoloi" class="section level2">
 <h2>Agioi Apostoloi</h2>
 <p><strong>Total Area:</strong> 1987 m2</p>
-<div id="htmlwidget-71b2418838419042a105" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-71b2418838419042a105">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3838973,22.3837956,22.3836188,22.383472,22.3833975,22.3832998,22.3831901,22.3832207,22.383434,22.3834347,22.3836304,22.3838973],"lat":[38.5207445,38.5208358,38.5209827,38.5209006,38.5208581,38.5208072,38.5207213,38.5206656,38.5204097,38.5204103,38.520558,38.5207445]}]]],"X2","ag_apostoloi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Agioi Apos<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>1,987<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"ag_apostoloi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5204097,38.5209827],"lng":[22.3831901,22.3838973]},"fitBounds":[38.5204096606017,22.383190082223,38.5209827234686,22.3838973412894,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-83ebbee654e87efd23d6" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-83ebbee654e87efd23d6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3838973,22.3837956,22.3836188,22.383472,22.3833975,22.3832998,22.3831901,22.3832207,22.383434,22.3834347,22.3836304,22.3838973],"lat":[38.5207445,38.5208358,38.5209827,38.5209006,38.5208581,38.5208072,38.5207213,38.5206656,38.5204097,38.5204103,38.520558,38.5207445]}]]],"X2","ag_apostoloi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>14<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Agioi Apos<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>1,987<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"ag_apostoloi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5204097,38.5209827],"lng":[22.3831901,22.3838973]},"fitBounds":[38.5204096606017,22.383190082223,38.5209827234686,22.3838973412894,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="tzitzi" class="section level2">
 <h2>Tzitzi</h2>
 <p><strong>Total Area:</strong> 1700 m2</p>
-<div id="htmlwidget-1c93657f7531cb487a88" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1c93657f7531cb487a88">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3894379,22.3892594,22.3890665,22.3891582,22.3892651,22.38933,22.3894656,22.3896,22.3897322,22.3896058,22.3894379],"lat":[38.5152386,38.5151012,38.5149543,38.5148706,38.5147743,38.5147033,38.5147984,38.5149091,38.5149919,38.5151122,38.5152386]}]]],"X2","tzitzi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>13<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Tzitzi<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>1,700<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"tzitzi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5147033,38.5152386],"lng":[22.3890665,22.3897322]},"fitBounds":[38.5147032775841,22.3890665456845,38.5152386242651,22.3897321970634,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bc6f2762702f18a1be89" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bc6f2762702f18a1be89">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[22.3894379,22.3892594,22.3890665,22.3891582,22.3892651,22.38933,22.3894656,22.3896,22.3897322,22.3896058,22.3894379],"lat":[38.5152386,38.5151012,38.5149543,38.5148706,38.5147743,38.5147033,38.5147984,38.5149091,38.5149919,38.5151122,38.5152386]}]]],"X2","tzitzi",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#31A354","fillOpacity":1,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>2<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>begin<\/nobr><\/td><td align=\"right\"><nobr>2<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>end<\/nobr><\/td><td align=\"right\"><nobr>13<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Name<\/nobr><\/td><td align=\"right\"><nobr>Tzitzi<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Area<\/nobr><\/td><td align=\"right\"><nobr>1,700<\/nobr><\/td><\/tr><\/table><\/div>",null,"2",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"tzitzi",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[38.5147033,38.5152386],"lng":[22.3890665,22.3897322]},"fitBounds":[38.5147032775841,22.3890665456845,38.5152386242651,22.3897321970634,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
