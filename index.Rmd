@@ -23,7 +23,7 @@ library(kableExtra)
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
 ## read csvs
-dex_csv <- read_csv("../dexameni.csv")
+
 
 ## read shapefiles
 dexameni <- read_sf("../dexameni_poly.shp")
@@ -33,6 +33,7 @@ mandra <- read_sf("../mandra.shp")
 tzitzi <- read_sf("../tzitzi.shp")
 ag_apostoloi <- read_sf("../ag_apostoloi.shp")
 koumpouloi <- read_sf("../koumpouloi.shp")
+aggelospilia <- read_sf("../aggelospilia.shp")
 
 ```
 
@@ -109,4 +110,15 @@ tmap_options(check.and.fix = T)
 tmap_mode("view")
 
 tm_basemap("OpenStreetMap") + tm_shape(tzitzi) + tm_fill("#31a354") + tm_polygons()
+```
+
+## Aggelospilia
+
+**Total Area:** 1032 m2
+```{r aggelospilia, echo=FALSE, message=FALSE, warning=FALSE}
+
+tmap_options(check.and.fix = T)
+tmap_mode("view")
+
+tm_basemap("OpenStreetMap") + tm_shape(aggelospilia) + tm_fill("#31a354") + tm_polygons()
 ```
